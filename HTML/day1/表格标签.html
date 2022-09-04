@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格标签</title>
+</head>
+
+<body>
+    <h1>表格标签</h1>
+    <!-- table：主体 -->
+    <!-- th: 表头 -->
+    <!-- tr: 行 -->
+    <!-- td: 列 -->
+
+    <!-- border：表格线 -->
+    <!-- height && width -->
+    <table border="1" width="200" height="100">
+        <caption>学生成绩单</caption>
+        <tr>
+            <th>姓名</th>
+            <th>成绩</th>
+            <th>评语</th>
+
+        </tr>
+
+        <tr>
+            <td>小明</td>
+            <td>100</td>
+            <td>牛</td>
+        </tr>
+    </table>
+
+    
+    <!-- 表格结构 -->
+    <!-- thead -->
+    <!-- tbody  -->
+    <!-- tfoot -->
+    <table border="1" width="200" height="100">
+        <caption>学生成绩单</caption>
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>成绩</th>
+                <th>评语</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>小明</td>
+                <td>100</td>
+                <td>牛</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>合计</td>
+                <td>100</td>
+                <td>牛</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h1>合并单元格</h1>
+    <!-- 左上原则：以保留左上角为准 保留需要的删除其他的 -->
+    <!-- 跨行合并：rowspan -->
+    <table border="1" width="200" height="100">
+        <caption>学生成绩单</caption>
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>成绩</th>
+                <th>评语</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>小明</td>
+                <td rowspan="2">100</td>
+                <td rowspan="2">牛</td>
+            </tr>
+            <tr>
+                <td>小美</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>合计</td>
+                <td colspan="2">100</td>
+            </tr>
+        </tfoot>
+    </table>
+    <!-- 跨列合并 colspan -->
+</body>
+
+</html>
